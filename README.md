@@ -48,9 +48,114 @@ Deploy the Portfolio.
 Upload to GitHub Pages for free hosting.
 
 ## PROGRAM
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header, footer {
+      background: #4a4aff;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 20px;
+      max-width: 700px;
+      margin: 20px auto;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      display: none;
+    }
+    section.active {
+      display: block;
+    }
+    h2 {
+      color: #4a4aff;
+    }
+    .project {
+      background: #eef;
+      padding: 10px;
+      margin-top: 10px;
+      border-left: 4px solid #4a4aff;
+    }
+    footer {
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mukesh</h1>
+    <nav>
+      <a onclick="showSection('about')">About</a>
+      <a onclick="showSection('projects')">Projects</a>
+      <a onclick="showSection('contact')">Contact</a>
+    </nav>
+  </header>
 
+  <section id="about" class="active">
+    <h2>About Me</h2>
+    <p>Hi! I'm Mukesh, a web developer who loves building clean and simple websites. I focus on user-friendly and functional designs.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <strong>Portfolio Website:</strong> A personal site built using HTML and CSS.
+    </div>
+    <div class="project">
+      <strong>To-Do App:</strong> A minimal app for managing daily tasks.
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: mukesh.07@example.com</p>
+    <p>GitHub: <a href="https://github.com/Mukesh-11-12" target="_blank">github.com/Mukesh-11-12</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mukesh</p>
+  </footer>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
+```
 
 ## OUTPUT
+<img width="1915" height="1197" alt="Screenshot 2025-08-13 094048" src="https://github.com/user-attachments/assets/8a773388-1c92-407e-b81a-d01e40c974e7" />
+<img width="1919" height="1199" alt="Screenshot 2025-08-13 094113" src="https://github.com/user-attachments/assets/559ca03d-1560-4c09-9cdf-edb8a370ce7a" />
+<img width="1919" height="1199" alt="Screenshot 2025-08-13 094131" src="https://github.com/user-attachments/assets/a1a220cf-a98a-4891-94ec-e21dc61ca604" />
+
+
+
 
 
 ## RESULT
